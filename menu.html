@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab1d996a24.js" crossorigin="anonymous"></script>
+    <title>Menu</title>
+</head>
+
+<body>
+    <section class='menu-header'>
+        <nav>
+            <a href="index.html"><img src="imagee/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacts</a>
+                    </li>
+
+                </ul>
+            </div>
+            <i class="fas fa-hamburger" onclick="showMenu()"></i>
+        </nav>
+        <h1>Menu</h1>
+    </section>
+
+    <!-- menu body -->
+    <section class="menu-body">
+        <div id="home" class="content">
+
+            <!-- Menu -->
+            <div id="menu" class="container black xxlarge padding-64">
+                <h1 class="center jumbo padding-32">THE MENU</h1>
+                <div class="row center border border-dark-grey">
+                    <a href="#pizza">
+                        <div class="third padding-large red">Pizza</div>
+                    </a>
+                    <a href="#burgers">
+                        <div class="third padding-large hover-red">Burgers</div>
+                    </a>
+                    <a href="#shakes">
+                        <div class="third padding-large hover-red">Shakes</div>
+                    </a>
+                    <a href="#sides">
+                        <div class="third padding-large hover-red">Sides</div>
+                    </a>
+                </div>
+
+                <div id="pizza" class="container white padding-32">
+
+                    <h1><b>Margherita</b> <span class="right tag dark-grey round">R50</span></h1>
+
+                    <hr>
+                    <h1><b>Pepporoni</b> <span class="right tag dark-grey round">R55</span></h1>
+
+                    <hr>
+                    <h1><b>Chicken</b> <span class="right tag dark-grey round">R60</span></h1>
+
+                    <hr>
+                    <h1><b>Peri Peri Chicken</b> <span class="right tag dark-grey round">R65</span></h1>
+
+                </div>
+
+                <h1 id="burgers" class="center jumbo padding-32">Burgers</h1>
+                <div class="container white padding-32">
+
+                    <h1><b>Chicken</b> <span class="right tag dark-grey round">R30</span></h1>
+
+                    <hr>
+                    <h1><b>Beef</b> <span class="right tag dark-grey round">R40</span></h1>
+
+                    <hr>
+                    <h1><b>Cheese</b> <span class="right tag dark-grey round">R45</span></h1>
+                </div>
+
+                <h1 id="shakes" class="center jumbo padding-32">Shakes</h1>
+                <div class="container white padding-32">
+
+                    <h1><b>Chocolate</b> <span class="right tag dark-grey round">R35</span></h1>
+
+                    <hr>
+                    <h1><b>Vanilla</b> <span class="right tag dark-grey round">R35</span></h1>
+
+                    <hr>
+                    <h1><b>Lime</b> <span class="right tag dark-grey round">R35</span></h1>
+
+                    <hr>
+                    <h1><b>Strawberry</b> <span class="right tag dark-grey round">R35</span></h1>
+                </div>
+
+                <h1 id="sides" class="center jumbo padding-32">Sides</h1>
+                <div class="container white padding-32">
+
+                    <h1><b>Small Chips</b> <span class="right tag dark-grey round">R10</span></h1>
+
+                    <hr>
+                    <h1><b>Medium Chips</b> <span class="right tag dark-grey round">R20</span></h1>
+
+                    <hr>
+                    <h1><b>Large Chips</b> <span class="right tag dark-grey round">R30</span></h1>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- javascript for Toggle menu -->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

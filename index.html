@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab1d996a24.js" crossorigin="anonymous"></script>
+    <title>Snack Shake</title>
+</head>
+
+<body>
+    <section class='header'>
+        <nav>
+            <a href="index.html"><img src="imagee/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacts</a>
+                    </li>
+
+                </ul>
+            </div>
+            <i class="fas fa-hamburger" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box ">
+            <h1>Snack Shack</h1>
+            <p>&#129311 Welcome to Snack Shack, lets feed your taste with our great meals</p>
+            <a href=" " class="hero-btn ">Vist us to feed your taste</a>
+        </div>
+    </section>
+    <!-- javascript for Toggle menu -->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
